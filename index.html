@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code generator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h2>Qr Code Generator</h2>
+            <p>Enter Url or Text to generate QR Code</p>
+            <input 
+            type="text" 
+            class="form-control" 
+            placeholder="Enter URL or Text!" 
+            id="input-value">
+            <div class="sizes">
+                <p>Select Size</p>
+                <select id="size">
+                    <option value="100">100x100</option>
+                    <option value="200">200x200</option>
+                    <option value="300">300x400</option>
+                    <option value="400">400x400</option>
+                    <option value="500">500x600</option>
+                    <option value="600">600x700</option>
+                    <option value="700">700x700</option>
+                </select>
+            </div>
+            <div id="qrCodeScreen"></div>
+            <div class="btns">
+                <button type="submit" class="btn-generator">Generate QR Code</button>
+                <a href="" class="btn-save" download="qr_code.png">Save</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
